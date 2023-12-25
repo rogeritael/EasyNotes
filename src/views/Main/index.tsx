@@ -1,14 +1,25 @@
 import { CreateButton } from "../../components/CreateButton";
 import { Text } from "../../components/Text";
-import { MainContainer } from "./styles";
+import { Container, NotesArea, Footer, FooterContainer } from "./styles";
 
 export function Main(){
     return (
-        <MainContainer>
-            <Text color="#fff" size={24} weight="300">
-                <Text size={24} color="#fff" weight="600">Easy</Text>Notes
+        <Container>
+            <Text size={24} weight="300">
+                <Text size={24} weight="600">Easy</Text>Notes
             </Text>
-            <CreateButton />
-        </MainContainer>
+
+            <NotesArea>
+                <Text>
+                    Minhas notas
+                </Text>
+            </NotesArea>
+
+            <FooterContainer>
+                <Footer>
+                    <CreateButton />
+                </Footer>
+            </FooterContainer>
+        </Container>
     )
 }
