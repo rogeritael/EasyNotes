@@ -9,7 +9,6 @@ export const Container = styled.SafeAreaView`
 export const NotesArea = styled.View`
     flex: 1;
     align-items: center;
-    /* justify-content: center; */
 `
 
 export const FooterContainer = styled.View``
